@@ -43,6 +43,15 @@ function generateHTML(data) {
     return '<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">' + shapeChoice + `<text x="50" y="50" fontsize="20" text-anchor="middle" fill="${charsColor}">${logoCharacter}</text>` + '</svg>';
 };
 
+function init() {
+    inquirer.prompt(questions)
+    .then((data) => {
+        const fileName = 'assets/images/logo.svg'
+        writeToFile(fileName, generateHTML(data));
+    });
+}
+
+
 
 
 
