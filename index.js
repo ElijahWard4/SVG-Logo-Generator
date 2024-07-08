@@ -25,3 +25,22 @@ const questions = [
         name: 'shapeColor'
     }
 ];
+
+
+const validate = (logoCharacter, charsColor, logoShape, shapeColor) => {
+    if (logoCharacter.length > 3) {
+        return 'Character must be 3 characters long';
+    }
+    if (charsColor.length === 0) {
+        return 'Please enter a color';
+    }
+    if (logoShape.length === 0) {
+        return 'Please choose a shape';
+    }
+    if (shapeColor.length === 0) {
+        return 'Please enter a color';
+    }
+    return true;
+};
+
+validate[logoCharacter, charsColor, logoShape, shapeColor];
