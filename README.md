@@ -1,4 +1,4 @@
-SVG Logo Generator
+
 ## SVG Logo Generator
 
 The SVG Logo Generator is a command-line application that prompts the user for input to generate a customized SVG logo. The user can choose the text, text color, shape, and shape color, and the application will create an SVG file based on these inputs.
