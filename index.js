@@ -26,6 +26,25 @@ const questions = [
     }
 ];
 
+function generateHTML(data) {
+
+    const {logoCharacter, charsColor} = data;
+    let shapeChoice;
+    if (data.logoShape === 'Triangle') {
+        shapeChoice = new triangle();
+        shapeChoice = `<polygon points="50,0 100,100 0,100" fill="${data.shapeColor}"/>`;
+    } else if (data.logoShape === 'Square') {
+        shapeChoice = new square();
+        shapeChoice = `<rect width="100" height="100" fill="${data.shapeColor}"/>`;
+    } else {
+        shapeChoice = new circle();
+        shapeChoice = `<circle cx="50" cy="50" r="50" fill="${data.shapeColor}"/>`;
+    }
+    return '<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">' + shapeChoice + `<text x="50" y="50" fontsize="20" text-anchor="middle" fill="${charsColor}">${logoCharacter}</text>` + '</svg>';
+};
+
+
+
 
 const validate = (logoCharacter, charsColor, logoShape, shapeColor) => {
     if (logoCharacter.length > 3) {
