@@ -53,6 +53,10 @@ function init() {
 
 const {logoCharacter, charsColor, logoShape, shapeColor} = questions;
 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log('Success! Your logo has been created!'));
+}
 
 
 
