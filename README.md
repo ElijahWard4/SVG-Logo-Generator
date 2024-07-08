@@ -6,6 +6,10 @@ The SVG Logo Generator is a command-line application that prompts the user for i
 ## Demo Video
 
 
+https://github.com/ElijahWard4/SVG-Logo-Generator/assets/97565223/bff45890-a3d3-4891-9633-0dfba36521e2
+
+
+
 ## Installation
 Clone the repository:
 
