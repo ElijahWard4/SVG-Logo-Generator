@@ -1,5 +1,11 @@
 const {triangle} = require('./shapes.js');
 
-const shape = new triangle();
-shape.setColor("blue");
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+describe('triangle', () => {
+
+    it ('should render a triangle with a red background color', () => {
+        const testTriangle = new triangle();
+        testTriangle.setColor('red');
+        const expectedOutput = '<polygon points="50,0 100,100 0,100" fill="red"/>';
+        expect(testTriangle.render()).toEqual(expectedOutput);
+    });
+});
