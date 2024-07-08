@@ -51,6 +51,7 @@ function init() {
     });
 }
 
+const {logoCharacter, charsColor, logoShape, shapeColor} = questions;
 
 
 
