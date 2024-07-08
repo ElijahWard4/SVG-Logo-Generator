@@ -71,4 +71,5 @@ const validate = (logoCharacter, charsColor, logoShape, shapeColor) => {
     return true;
 };
 
+init();
 validate[logoCharacter, charsColor, logoShape, shapeColor];
